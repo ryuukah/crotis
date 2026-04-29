@@ -1,20 +1,36 @@
+body {
+  background: #191919;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 300px;
+  margin: 100px auto;
+  text-align: center;
+}
+
 .search-box {
   display: flex;
-  gap: 10px;
 }
 
 .search-box input {
+  flex: 1;
   padding: 10px;
-  border: 1px solid #eee;
-  background: #fafafa;
+  border: none;
   outline: none;
-  width: 200px;
+  background: #2a2a2a;
+  color: white;
 }
 
 .search-box button {
-  background: #ff7aa2;
+  padding: 10px;
   border: none;
+  background: #ff7aa2;
   color: white;
-  padding: 10px 15px;
   cursor: pointer;
+}
+
+#response {
+  margin-top: 15px;
+  color: #ff7aa2;
 }
