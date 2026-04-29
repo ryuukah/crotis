@@ -1,11 +1,10 @@
 const input = document.getElementById("searchInput");
 const button = document.getElementById("searchBtn");
-const response = document.getElementById("response");
 
 const answers = {
   "cortis": "CORTIS is a co-ed group 💗",
-  "suvi": "Suvi is a Filipino singer and dancer ✨",
-  "love": "love♡attack mode activated 💌"
+  "suvi": "Suvi is a Filipino singer ✨",
+  "love": "love♡attack 💌"
 };
 
 function handleSearch() {
@@ -19,18 +18,15 @@ function handleSearch() {
     }
   }
 
-  response.textContent = result;
+  input.value = result; // ✨ THIS is what puts the answer inside the bar
 }
 
 // click button
 button.addEventListener("click", handleSearch);
 
-// press enter
+// press Enter
 input.addEventListener("keypress", function(e) {
   if (e.key === "Enter") {
     handleSearch();
   }
 });
-
-// live typing (optional)
-input.addEventListener("input", handleSearch);
