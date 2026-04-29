@@ -1,0 +1,20 @@
+.search-box {
+  display: flex;
+  gap: 10px;
+}
+
+.search-box input {
+  padding: 10px;
+  border: 1px solid #eee;
+  background: #fafafa;
+  outline: none;
+  width: 200px;
+}
+
+.search-box button {
+  background: #ff7aa2;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+}
