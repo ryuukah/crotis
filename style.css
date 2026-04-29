@@ -6,7 +6,6 @@ body {
 .container {
   width: 300px;
   margin: 100px auto;
-  text-align: center;
 }
 
 .search-box {
@@ -28,9 +27,4 @@ body {
   background: #ff7aa2;
   color: white;
   cursor: pointer;
-}
-
-#response {
-  margin-top: 15px;
-  color: #ff7aa2;
 }
