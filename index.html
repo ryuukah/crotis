@@ -1,0 +1,16 @@
+<div class="search-box">
+  <input type="text" id="searchInput" placeholder="search..." />
+  <button onclick="search()">SEARCH</button>
+</div>
+
+<script>
+function search() {
+  const query = document.getElementById("searchInput").value.toLowerCase();
+
+  if (query.includes("cortis")) {
+    window.location.href = "#cortis"; // scroll or redirect
+  } else {
+    alert("No results found!");
+  }
+}
+</script>
