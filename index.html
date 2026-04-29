@@ -1,16 +1,21 @@
-<div class="search-box">
-  <input type="text" id="searchInput" placeholder="search..." />
-  <button onclick="search()">SEARCH</button>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Search Bar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<script>
-function search() {
-  const query = document.getElementById("searchInput").value.toLowerCase();
+  <div class="container">
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="search..." />
+      <button id="searchBtn">SEARCH</button>
+    </div>
 
-  if (query.includes("cortis")) {
-    window.location.href = "#cortis"; // scroll or redirect
-  } else {
-    alert("No results found!");
-  }
-}
-</script>
+    <p id="response"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
